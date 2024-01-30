@@ -1,0 +1,26 @@
+Explanation:
+Server Side:
+1.	Running the Server: When you execute server.py, it starts the server.
+    The server is now running and listening for incoming connections from clients.
+
+2.	Waiting for Connections: The server is in a state where it's waiting for clients to connect.
+     The blinking cursor indicates that the server script is running and is in a wait state.
+
+3.	Handling Client Connections: When a client tries to connect, the server accepts this connection.
+    For each connected client, the server creates a separate thread.
+    This thread is responsible for receiving messages from that client and broadcasting them to all other connected clients.
+
+Client Side:
+1.	Connecting to the Server: When you run a client script (like client.py), it attempts to connect to the server.
+    If successful, the client can now send and receive messages.
+
+2.	Sending and Receiving Messages: Clients can send messages to the server.
+    The server then sends these messages to all connected clients. When clients receive messages, they display them to the user.
+
+Interaction:
+•	Multiple Clients: Multiple clients can connect to the server simultaneously. Each client can communicate independently.
+•	Continuous Operation: The server continues to run, waiting for new clients and handling messages from connected clients.
+•	Client Disconnection: If a client disconnects or sends a special command (like /quit),
+    the server closes the connection with that client and stops sending messages to it.
+
+
